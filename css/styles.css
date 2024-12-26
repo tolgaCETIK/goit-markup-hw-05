@@ -1,7 +1,17 @@
+h1, h2, h3, h4, h5, h6, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #ffffff;
+}
+
+.container {
+  width: 1158px;
 }
 
 header {
@@ -16,7 +26,10 @@ header {
   font-weight: 700;
   font-size: 18px;
   color: #4d5ae5;
-  font-family: "Raleway", sans-serif;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-family: "Raleway";
   text-decoration: none;
 }
 
@@ -24,7 +37,7 @@ header {
   color: #2e2f42;
 }
 
-.logo-one > .studio2 {
+.logo-one > .studio-two {
   color: #f4f4fd;
 }
 
@@ -62,7 +75,7 @@ nav ul li a:hover {
 
 /*main*/
 
-.hero {
+.section-one {
   background-color: #2e2f42;
 }
 
@@ -96,6 +109,7 @@ nav ul li a:hover {
 h2 {
   text-align: center;
   font-size: 36px;
+  line-height: 1.11;
 }
 
 .finish {
