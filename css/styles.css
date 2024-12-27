@@ -79,12 +79,17 @@ nav ul li a:hover {
   background-color: #2e2f42;
 }
 
-.heroh1 {
+.heroh {
   color: white;
   font-size: 56px;
   letter-spacing: 2%;
   font-weight: bold;
   text-align: center;
+}
+
+.heroh h1 {
+  letter-spacing: 0.02em;
+  line-height: 1.07;
 }
 
 .buton {
@@ -97,12 +102,17 @@ nav ul li a:hover {
   border: 1px solid #4d5ae5;
   border-radius: 4px;
   cursor: pointer;
+  line-height: 1.5;
 }
 .buton:hover {
   background-color: #404bbf;
 }
 
-.our-team li {
+.buton:focus {
+  background-color: #404bbf;
+}
+
+.section-three li {
   list-style: none;
 }
 
