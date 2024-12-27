@@ -75,7 +75,7 @@ nav ul li a:hover {
 
 /*main*/
 
-.section-one {
+.hero-image {
   background-color: #2e2f42;
 }
 
@@ -104,15 +104,14 @@ nav ul li a:hover {
   cursor: pointer;
   line-height: 1.5;
 }
-.buton:hover {
-  background-color: #404bbf;
-}
 
+.buton:hover
 .buton:focus {
   background-color: #404bbf;
 }
 
-.section-three li {
+
+.section-2, .section li {
   list-style: none;
 }
 
@@ -120,9 +119,18 @@ h2 {
   text-align: center;
   font-size: 36px;
   line-height: 1.11;
+  text-transform: capitalize;
+  color: #2e2f42;
+  letter-spacing: 0.02em;
 }
 
-.finish {
+h3 {
+  font-weight: 500;
+  line-height: 20px;
+  line-height: 1.2;
+}
+
+.footer {
   background-color: #2e2f42;
   color: #f4f4fd;
 }
