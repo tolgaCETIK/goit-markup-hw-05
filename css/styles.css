@@ -1,8 +1,22 @@
-
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #ffffff;
+}
+
+h2 {
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.11;
+  text-transform: capitalize;
+  color: #2e2f42;
+  letter-spacing: 0.02em;
+}
+
+h3 {
+  font-weight: 500;
+  line-height: 20px;
+  line-height: 1.2;
 }
 
 
@@ -21,12 +35,18 @@ header {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   text-decoration: none;
 }
 
 .logo-one > .studio {
   color: #2e2f42;
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 nav ul {
@@ -34,6 +54,10 @@ nav ul {
 }
 nav ul li {
   color: #2e2f42;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 nav ul li a {
@@ -41,33 +65,41 @@ nav ul li a {
   color: inherit; /* Rengi miras alır */
 }
 
-nav ul li a:hover {
+nav ul li a:hover header nav .nav-list:active header nav .nav-list:focus {
   color: #404bbf; /* Üzerine gelindiğinde renk değişir */
 }
 
-.contact address ul li {
+.address-menu address ul li {
   list-style: none;
 }
 
-.mail,
-.tel {
+.address-mail,
+.address-tel {
   text-decoration: none; /* Alt çizgiyi kaldırır */
   font-style: normal; /* İtalik stili kaldırır */
   color: #434455;
+  font-size: 16px;
+  color: #434455;
+  line-height: 1.5;
+  letter-spacing: 0.02em;   
 }
 
-.mail:hover,
-.tel:hover {
+.address-mail:hover,
+.address-tel:hover .address-mail:focus,
+.address-tel:focus,
+.address-mail:active,
+.address-tel:active {
   color: #404bbf;
 }
 
 /*main*/
+/* Section 1 Start*/
 
 .hero-image {
   background-color: #2e2f42;
 }
 
-.heroh {
+.hero-image-title {
   color: white;
   font-size: 56px;
   letter-spacing: 2%;
@@ -75,12 +107,12 @@ nav ul li a:hover {
   text-align: center;
 }
 
-.heroh h1 {
+.hero-image-title h1 {
   letter-spacing: 0.02em;
   line-height: 1.07;
 }
 
-.buton {
+.hero-image-button {
   background-color: #4d5ae5;
   font-family: "Roboto", sans-serif;
   color: #ffffff;
@@ -93,31 +125,12 @@ nav ul li a:hover {
   line-height: 1.5;
 }
 
-.buton:hover
-.buton:focus {
+.hero-image-button:hover .hero-image-button:focus {
   background-color: #404bbf;
 }
+/*section 1 End */
 
-
-.section-2, .section li {
-  list-style: none;
-}
-
-h2 {
-  text-align: center;
-  font-size: 36px;
-  line-height: 1.11;
-  text-transform: capitalize;
-  color: #2e2f42;
-  letter-spacing: 0.02em;
-}
-
-h3 {
-  font-weight: 500;
-  line-height: 20px;
-  line-height: 1.2;
-}
-
+/* Footer Start */
 .footer {
   background-color: #2e2f42;
   color: #f4f4fd;
@@ -137,3 +150,4 @@ h3 {
 .footer-logo > .footer-logo-span {
   color: #f4f4fd;
 }
+/* Footer End*/
