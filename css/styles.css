@@ -1,8 +1,3 @@
-h1, h2, h3, h4, h5, h6, p, ul {
-  margin: 0;
-  padding: 0;
-}
-
 
 body {
   font-family: "Roboto", sans-serif;
@@ -10,9 +5,6 @@ body {
   background-color: #ffffff;
 }
 
-.container {
-  width: 1158px;
-}
 
 header {
   font-family: "Roboto", sans-serif;
@@ -35,10 +27,6 @@ header {
 
 .logo-one > .studio {
   color: #2e2f42;
-}
-
-.logo-one > .studio-two {
-  color: #f4f4fd;
 }
 
 nav ul {
@@ -132,5 +120,20 @@ h3 {
 
 .footer {
   background-color: #2e2f42;
+  color: #f4f4fd;
+}
+
+.footer-logo {
+  font-weight: 700;
+  font-size: 18px;
+  color: #4d5ae5;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-family: "Raleway";
+  text-decoration: none;
+}
+
+.footer-logo > .footer-logo-span {
   color: #f4f4fd;
 }
