@@ -1,13 +1,15 @@
-.container {
-  max-width: 1158px;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
+
+/* Genel stil */
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #ffffff;
+  border: 1px solid #000;
+  margin: 0 auto;
+}
+
+img {
+  display: block;
 }
 
 h2 {
@@ -22,60 +24,73 @@ h2 {
 
 h3 {
   font-weight: medium;
- letter-spacing: 2%;
+  letter-spacing: 2%;
   line-height: 1.2;
 }
 
 ul {
   list-style: none;
-  list-style-type: none;
 }
 
-li {
-  list-style: none;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 4%;
-
-
-}
-
+/* Header */
 header {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between; /* Logo ve menu'yu ayırır */
-  align-items: center; /* Yatayda ortalar */
+  justify-content: space-between;
+  align-items: center;
   font-family: "Roboto", sans-serif;
-  font-style: normal;
-  text-decoration: none;
-  letter-spacing: 2%;
   font-weight: normal;
+  border-bottom: 1px solid #000000;
+  flex-direction: row;
+}
+
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+  border: 1px solid #000;
+}
+
+.header .div-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 nav {
   display: flex;
   align-items: center;
-  gap: 76px;
+}
+
+.nav-list{
+  padding: 24px 0;
 }
 
 nav ul {
   display: flex;
-  flex-direction: row;
   gap: 40px;
 }
 
-address ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  list-style: none;
-  gap: 40px;
-  margin-right: 156px;
+nav ul li {
+  color: #2e2f42;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav ul li a:hover {
+  color: #404bbf;
 }
 
 .logo-one {
-  display: flex;
-  margin-left: 156px;
   font-weight: 700;
   font-size: 18px;
   color: #4d5ae5;
@@ -84,6 +99,8 @@ address ul {
   text-transform: uppercase;
   font-family: "Raleway", sans-serif;
   text-decoration: none;
+  margin-right: 76px;
+ 
 }
 
 .logo-one > .logo-studio {
@@ -96,58 +113,53 @@ address ul {
   text-transform: uppercase;
 }
 
-nav ul li {
-  color: #2e2f42;
-  font-weight: 500;
+.address-menu {
+  display: flex; /* Flex düzeni aktif */
+  gap: 16px; /* İki öğe arasında boşluk */
+  align-items: center; /* Dikey ortalama */
+  margin-left: 332px;
+}
+
+.address-menu ul {
+  display: flex; /* Liste öğeleri yan yana */
+  gap: 40px; /* Linkler arası boşluk */
+  list-style: none; /* Noktaları kaldır */
+  padding: 0; /* Varsayılan boşlukları kaldır */
+  margin: 0;
+}
+
+.address-menu li {
+  display: inline-block; /* Yan yana durması için */
+}
+
+.address-menu a {
+  text-decoration: none; /* Alt çizgiyi kaldır */
+  color: #434455; /* Varsayılan renk */
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-}
-
-nav ul li a {
-  text-decoration: none; /* Alt çizgiyi kaldırır */
-  color: inherit; /* Rengi miras alır */
-}
-
-.nav-list:hover,
-.nav-list:active header nav,
-.nav-list:focus {
-  color: #404bbf; /* Üzerine gelindiğinde renk değişir */
-}
-
-.address-menu {
   font-style: normal;
 }
-.address-menu ul {
-  font-style: normal; /* İtalik stili kaldırır */
-  margin-right: 156px;
+
+.address-menu a:hover {
+  color: #404bbf; /* Hover rengi */
 }
 
-.address-mail-tel {
-  text-decoration: none; /* Alt çizgiyi kaldırır */
-  color: #434455;
-  font-size: 16px;
-  color: #434455;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-}
-
-.address-mail-tel:hover,
-.address-mail-tel:focus,
-.address-mail-tel:active {
-  color: #404bbf;
-}
-
-/*main*/
-/* Section 1 Start*/
-
+/* Section 1 - Hero */
 .hero-image {
   background-color: #2e2f42;
-  width: 1440;
   height: 600px;
-  padding-top: 188px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-image .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .hero-image-title {
@@ -174,64 +186,44 @@ nav ul li a {
   cursor: pointer;
   line-height: 1.5;
   margin-top: 48;
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border-radius: 4px;
 }
 
-.hero-image-button:hover,
-.hero-image-button:focus {
+.hero-image-button:hover {
   background-color: #404bbf;
 }
 
-.hero-image h1 button {
-  text-align: center;
-}
-/*section 1 End */
-
-/*section 2 Start */
-
+/* Section 2 */
 .peculiarities-section {
   display: flex;
   justify-content: center;
-  margin-left: 156px;
-  margin-right: 156px;
-}
-
-.section-2-title {
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-}
-
-.section-2-text {
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+  margin: 0 156px;
 }
 
 .peculiarities-section ul {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
   gap: 24px;
 }
 
-/*section 2 End */
-
-/*section 3 Start */
-
+/* Section 3 - Our Team */
 .our-team-section {
   background-color: #f4f4fd;
   display: flex;
   justify-content: center;
+  flex-direction: row;
+
 }
 
-.our-team-list {
-  background-color: #ffffff;
+.our-team-section ul {
+  display: flex;
+  gap: 24px;
 }
 
 .our-team-title {
   font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
   color: #2e2f42;
 }
 
@@ -240,26 +232,20 @@ nav ul li a {
   letter-spacing: 0.02em;
 }
 
-.our-team-section ul {
-  display: flex;
-  flex-direction: row;
-  gap: 24px;
-}
-
-/*section 3 End */
-
-/*section 4 Start */
-
+/* Section 4 - Portfolio */
 .our-portfolio-section {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
+.our-portfolio-section ul {
+  display: flex;
+  gap: 24px;
+}
+
 .portfolio-title {
   font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
   color: #2e2f42;
 }
 
@@ -267,37 +253,32 @@ nav ul li a {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-.our-portfolio-section div ul {
-  display: flex;
-  flex-direction: row;
-  gap: 24px;
-}
 
-/*section 4 End */
-
-/* Footer Start */
+/* Footer */
 .footer {
   background-color: #2e2f42;
-  color: #f4f4fd;
-  width: 100%;
+  width:100%px;
   height: 312px;
+  color: #f4f4fd;
+  display: flex;
+  justify-content: center;
+ align-items: center;
+}
+
+.footer .container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding-left: 156px; /* Yatayda pozisyon ayarı */
-  gap: 16px; /* Logo ve yazı arasındaki boşluğu ayarla */
+  gap: 16px;
+  
 }
 
 .footer-logo {
   font-weight: 700;
   font-size: 18px;
   color: #4d5ae5;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   font-family: "Raleway", sans-serif;
   text-decoration: none;
-  margin-left: 156px;
 }
 
 .footer-logo > .footer-logo-span {
@@ -308,5 +289,5 @@ nav ul li a {
 .footer-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
+  max-width: 264px;
 }
-/* Footer End*/
