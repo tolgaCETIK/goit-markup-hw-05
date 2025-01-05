@@ -46,7 +46,7 @@ header {
   width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
-  border: 1px solid #000;
+
 }
 
 .header .div-header {
@@ -245,6 +245,7 @@ width: calc((100% - 72px) / 4);
 .team-info {
   text-align: center;
   padding: 32px 0;
+  background-color: #ffffff;
 
 }
 
@@ -263,6 +264,7 @@ width: calc((100% - 72px) / 4);
   letter-spacing: 0.02em;
   text-align: center;
 }
+
 
 /* Section 4 - Portfolio */
 .our-portfolio-section {
