@@ -55,20 +55,24 @@ header {
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
+
 }
 
 nav {
   display: flex;
   align-items: center;
+  
 }
 
 .nav-list {
   padding: 24px 0;
+  
 }
 
 .list {
   display: flex;
   gap: 40px;
+  
 }
 
 nav ul li {
@@ -98,6 +102,7 @@ nav ul li a:hover {
   font-family: "Raleway", sans-serif;
   text-decoration: none;
   margin-right: 76px;
+  
 }
 
 .logo-one > .logo-studio {
@@ -116,6 +121,7 @@ nav ul li a:hover {
   align-items: center; /* Dikey ortalama */
   margin-left: 332px;
   gap: 40px;
+  
 }
 
 .address-menu ul {
@@ -124,10 +130,12 @@ nav ul li a:hover {
   list-style: none; /* Noktaları kaldır */
   padding: 0; /* Varsayılan boşlukları kaldır */
   margin: 0;
+  
 }
 
 .address-menu li {
   display: inline-block; /* Yan yana durması için */
+  
 }
 
 .address-menu a {
@@ -137,6 +145,7 @@ nav ul li a:hover {
   line-height: 1.5;
   letter-spacing: 0.02em;
   font-style: normal;
+  
 }
 
 .address-menu a:hover {
@@ -236,11 +245,10 @@ nav ul li a:hover {
   margin-bottom: 72px;
 }
 
-.our-team-section ul {
+.our-team-ul {
   display: flex;
   gap: 24px;
   padding: 0;
-  row-gap: 48px;
 }
 
 .our-team-list {
@@ -285,6 +293,7 @@ nav ul li a:hover {
   padding: 0;
   margin: 0;
   gap: 24px;
+  row-gap: 48px;
 }
 
 .our-portfolio-list {
