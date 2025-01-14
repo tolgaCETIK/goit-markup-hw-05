@@ -46,6 +46,8 @@ header {
   width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
+  position: relative;
+  overflow: hidden;
 }
 
 .header .div-header {
@@ -55,24 +57,20 @@ header {
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
-
 }
 
 nav {
   display: flex;
   align-items: center;
-  
 }
 
 .nav-list {
   padding: 24px 0;
-  
 }
 
 .list {
   display: flex;
   gap: 40px;
-  
 }
 
 nav ul li {
@@ -102,7 +100,6 @@ nav ul li a:hover {
   font-family: "Raleway", sans-serif;
   text-decoration: none;
   margin-right: 76px;
-  
 }
 
 .logo-one > .logo-studio {
@@ -121,7 +118,6 @@ nav ul li a:hover {
   align-items: center; /* Dikey ortalama */
   margin-left: 332px;
   gap: 40px;
-  
 }
 
 .address-menu ul {
@@ -130,12 +126,10 @@ nav ul li a:hover {
   list-style: none; /* Noktaları kaldır */
   padding: 0; /* Varsayılan boşlukları kaldır */
   margin: 0;
-  
 }
 
 .address-menu li {
   display: inline-block; /* Yan yana durması için */
-  
 }
 
 .address-menu a {
@@ -145,7 +139,6 @@ nav ul li a:hover {
   line-height: 1.5;
   letter-spacing: 0.02em;
   font-style: normal;
-  
 }
 
 .address-menu a:hover {
@@ -154,12 +147,21 @@ nav ul li a:hover {
 
 /* Section 1 - Hero */
 .hero-image {
-  background-color: #2e2f42;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   height: 600px;
   width: 100%;
   display: flex;
   align-items: center;
+  max-width: 1440px;
   padding: 188px 0;
+  margin: 0 auto;
 }
 
 .hero-image .container {
@@ -167,6 +169,8 @@ nav ul li a:hover {
   align-items: center;
   flex-direction: column;
   gap: 48px;
+  position: relative;
+  overflow: hidden;
 }
 
 .hero-image-title {
@@ -193,6 +197,7 @@ nav ul li a:hover {
   min-width: 169px;
   height: 56px;
   border-style: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-image-button:hover {
@@ -233,6 +238,20 @@ nav ul li a:hover {
 .section-two-title {
   margin-bottom: 8px;
 }
+.icon-peculiarities svg {
+  width: 64px;
+}
+
+.icon-peculiarities {
+  display: flex;
+  justify-content: center;
+  width: 264px;
+  height: 112px;
+  background-color: #f4f4fd;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+}
 
 /* Section 3 - Our Team */
 .our-team-section {
@@ -260,6 +279,36 @@ nav ul li a:hover {
   text-align: center;
   padding: 32px 0;
   background-color: #ffffff;
+}
+
+.our-team-socialmedia,
+.container {
+}
+
+.our-team-socialmedia svg {
+  width: 16px;
+  height: 16px;
+  fill: #f4f4fd;
+}
+
+.our-team-socialmedia-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.our-team-socialmedia-link {
+  background-color: #4d5ae5;
+  width: 100%;
+  height: 100%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .our-team-title {
@@ -302,7 +351,6 @@ nav ul li a:hover {
 
 .portfolio-info {
   padding: 32px 16px;
-  text-align: center;
   border: 1px solid #e7e9fc;
   border-top: none;
   margin-bottom: 8px;
@@ -323,23 +371,23 @@ nav ul li a:hover {
 /* Footer */
 .footer {
   background-color: #2e2f42;
-  width: 100%px;
+  width: 100%;
   height: 312px;
   color: #f4f4fd;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 100px 0;
+  margin: 0 auto;
+  max-width: 1440px;
 }
 
 .footer .container {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+  display: flex; /* İki div'i yan yana getirmek için */
+  gap: 120px; /* İki div arasındaki boşluk */
+  margin-left: 156px;
 }
 
+/* Sol taraftaki logo ve metin div'i */
 .footer-logo {
-  display: inline-block;
+  display: block;
   margin-bottom: 16px;
   font-weight: 700;
   font-size: 18px;
@@ -358,4 +406,41 @@ nav ul li a:hover {
   line-height: 1.5;
   letter-spacing: 0.02em;
   max-width: 264px;
+}
+
+/* Sağ taraftaki social media div'i */
+.footer-socialmedia {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.footer-socialmedia-text {
+  margin-bottom: 16px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 2%;
+}
+
+.footer-socialmedia-list {
+  display: flex;
+  gap: 16px;
+  padding: 0;
+}
+
+.footer-socialmedia-link {
+  background-color: #4d5ae5;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer svg {
+  width: 24px;
+  height: 24px;
+  fill: #f4f4fd;
 }
