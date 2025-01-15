@@ -281,11 +281,8 @@ nav ul li a:hover {
   background-color: #ffffff;
 }
 
-.our-team-socialmedia,
-.container {
-}
 
-.our-team-socialmedia svg {
+.our-team-socialmedia-icon {
   width: 16px;
   height: 16px;
   fill: #f4f4fd;
@@ -420,7 +417,7 @@ nav ul li a:hover {
   align-items: baseline;
 }
 
-.footer-socialmedia-text {
+.footer-socialmedia-text p {
   margin-bottom: 16px;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -451,7 +448,7 @@ nav ul li a:hover {
 background-color: #31d0aa;
 }
 
-.footer-socialmedia-link a:focus {
+.footer-socialmedia-link:focus {
   background-color: #31d0aa;
 }
 
