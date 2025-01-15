@@ -40,6 +40,7 @@ header {
   font-weight: normal;
   border-bottom: 1px solid #e7e9fc;
   flex-direction: row;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .container {
@@ -93,13 +94,26 @@ nav ul li a:hover {
 .logo-one {
   font-weight: 700;
   font-size: 18px;
-  color: #4d5ae5;
+  color: #404bbf;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   font-family: "Raleway", sans-serif;
   text-decoration: none;
   margin-right: 76px;
+  position: relative; 
+}
+
+.logo-one::after {
+  content: normal;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
+  transition: color 250ms cubic-bezier(0,4,0.2,1);
 }
 
 .logo-one > .logo-studio {
@@ -118,6 +132,7 @@ nav ul li a:hover {
   align-items: center; /* Dikey ortalama */
   margin-left: 332px;
   gap: 40px;
+  transition: color cubic-bezier(0,4,0.2,1);
 }
 
 .address-menu ul {
@@ -225,6 +240,7 @@ nav ul li a:hover {
   overflow: hidden;
 }
 
+
 .section-two-list {
   display: flex;
   gap: 24px;
@@ -238,8 +254,9 @@ nav ul li a:hover {
 .section-two-title {
   margin-bottom: 8px;
 }
-.icon-peculiarities svg {
+.icon-peculiarities-logo {
   width: 64px;
+  height: 64px;
 }
 
 .icon-peculiarities {
@@ -251,6 +268,9 @@ nav ul li a:hover {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   border: 1px solid #8e8f99;
   border-radius: 4px;
+  align-items: center;
+  margin-bottom: 8px;
+  
 }
 
 /* Section 3 - Our Team */
@@ -280,7 +300,6 @@ nav ul li a:hover {
   padding: 32px 0;
   background-color: #ffffff;
 }
-
 
 .our-team-socialmedia-icon {
   width: 16px;
@@ -380,7 +399,6 @@ nav ul li a:hover {
   display: flex; /* İki div'i yan yana getirmek için */
   align-items: baseline;
   margin-left: 156px;
-  
 }
 
 .footer-logo-section {
@@ -441,11 +459,11 @@ nav ul li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-socialmedia-link:hover {
-background-color: #31d0aa;
+  background-color: #31d0aa;
 }
 
 .footer-socialmedia-link:focus {
