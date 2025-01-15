@@ -40,7 +40,8 @@ header {
   font-weight: normal;
   border-bottom: 1px solid #e7e9fc;
   flex-direction: row;
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .container {
@@ -67,6 +68,18 @@ nav {
 
 .nav-list {
   padding: 24px 0;
+  position: relative;
+}
+
+.nav-list::after {
+  content: "";
+  width: 100%;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  border-radius: 2px;
+  transition: color 250ms cubic-bezier(0, 4, 0.2, 1);
+  background-color: #404bbf;
 }
 
 .list {
@@ -101,19 +114,7 @@ nav ul li a:hover {
   font-family: "Raleway", sans-serif;
   text-decoration: none;
   margin-right: 76px;
-  position: relative; 
-}
-
-.logo-one::after {
-  content: normal;
-  width: 100%;
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-  height: 4px;
-  background-color: #404bbf;
-  border-radius: 2px;
-  transition: color 250ms cubic-bezier(0,4,0.2,1);
+  position: relative;
 }
 
 .logo-one > .logo-studio {
@@ -132,7 +133,6 @@ nav ul li a:hover {
   align-items: center; /* Dikey ortalama */
   margin-left: 332px;
   gap: 40px;
-  transition: color cubic-bezier((0.4, 0, 0.2, 1));
 }
 
 .address-menu ul {
@@ -145,6 +145,7 @@ nav ul li a:hover {
 
 .address-menu li {
   display: inline-block; /* Yan yana durması için */
+  transition: color cubic-bezier((0.4, 0, 0.2, 1));
 }
 
 .address-menu a {
@@ -361,6 +362,14 @@ nav ul li a:hover {
 
 .our-portfolio-list {
   width: calc((100% - 48px) / 3);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(0%)
+}
+
+.our-portfolio-list:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  cursor: pointer;
 }
 
 .portfolio-info {
@@ -381,6 +390,29 @@ nav ul li a:hover {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+
+.portfolio-images {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-images-text {
+  position: absolute;
+  top:0;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  padding: 40px 32px;
+  background-color: #4d5ae5;
+  height: 100%;
+  width: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4,0,0.2,1);
+}
+
+.portfolio-images:hover .portfolio-images-text {
+  transform: translateY(0); }
 
 /* Footer */
 .footer {
@@ -433,7 +465,7 @@ nav ul li a:hover {
   align-items: baseline;
 }
 
-.footer-socialmedia-text p {
+.footer-socialmedia-text {
   margin-bottom: 16px;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
