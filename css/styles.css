@@ -69,18 +69,26 @@ nav {
 .nav-list {
   padding: 24px 0;
   position: relative;
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-list:hover {
+  color: #404bbf;
 }
 
 .nav-list::after {
+  position: absolute;
   content: "";
   width: 100%;
   left: 0;
   bottom: -1px;
   height: 4px;
   border-radius: 2px;
-  transition: color 250ms cubic-bezier(0, 4, 0.2, 1);
-  background-color: #404bbf;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
+
 
 .list {
   display: flex;
@@ -95,14 +103,6 @@ nav ul li {
   letter-spacing: 0.02em;
 }
 
-nav ul li a {
-  text-decoration: none;
-  color: inherit;
-}
-
-nav ul li a:hover {
-  color: #404bbf;
-}
 
 .logo-one {
   font-weight: 700;
@@ -145,7 +145,7 @@ nav ul li a:hover {
 
 .address-menu li {
   display: inline-block; /* Yan yana durması için */
-  transition: color cubic-bezier((0.4, 0, 0.2, 1));
+  
 }
 
 .address-menu a {
@@ -155,6 +155,7 @@ nav ul li a:hover {
   line-height: 1.5;
   letter-spacing: 0.02em;
   font-style: normal;
+  transition: color cubic-bezier((0.4, 0, 0.2, 1));
 }
 
 .address-menu a:hover {
@@ -292,6 +293,7 @@ nav ul li a:hover {
 .our-team-list {
   border-radius: 0px 0px 4px 4px;
   width: calc((100% - 72px) / 4);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .team-info {
@@ -324,6 +326,15 @@ nav ul li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 
+}
+
+.our-team-socialmedia-link:hover {
+  background-color: #404bbf;
+}
+
+.our-team-socialmedia-link:focus{
+  background-color: #404bbf;
 }
 
 .our-team-title {
