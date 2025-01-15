@@ -382,8 +382,11 @@ nav ul li a:hover {
 .footer .container {
   display: flex; /* İki div'i yan yana getirmek için */
   align-items: baseline;
-  gap: 120px; /* İki div arasındaki boşluk */
   margin-left: 156px;
+  
+}
+
+.footer-logo-section {
   margin-right: 120px;
 }
 
@@ -417,7 +420,7 @@ nav ul li a:hover {
   align-items: baseline;
 }
 
-.footer-socialmedia-text p {
+.footer-socialmedia-text {
   margin-bottom: 16px;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
