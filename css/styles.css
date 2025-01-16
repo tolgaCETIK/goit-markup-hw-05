@@ -87,9 +87,7 @@ nav {
   border-radius: 2px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #404bbf;
-
 }
-
 
 .list {
   display: flex;
@@ -103,7 +101,6 @@ nav ul li {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-
 
 .logo-one {
   font-weight: 700;
@@ -146,7 +143,6 @@ nav ul li {
 
 .address-menu li {
   display: inline-block; /* Yan yana durması için */
-  
 }
 
 .address-menu a {
@@ -256,10 +252,7 @@ nav ul li {
 .section-two-title {
   margin-bottom: 8px;
 }
-.icon-peculiarities-logo {
-  width: 64px;
-  height: 64px;
-}
+
 
 .icon-peculiarities {
   display: flex;
@@ -294,7 +287,8 @@ nav ul li {
 .our-team-list {
   border-radius: 0px 0px 4px 4px;
   width: calc((100% - 72px) / 4);
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .team-info {
@@ -304,8 +298,6 @@ nav ul li {
 }
 
 .our-team-socialmedia-icon {
-  width: 16px;
-  height: 16px;
   fill: #f4f4fd;
 }
 
@@ -327,14 +319,14 @@ nav ul li {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our-team-socialmedia-link:hover {
   background-color: #404bbf;
 }
 
-.our-team-socialmedia-link:focus{
+.our-team-socialmedia-link:focus {
   background-color: #404bbf;
 }
 
@@ -375,7 +367,7 @@ nav ul li {
 .our-portfolio-list {
   width: calc((100% - 48px) / 3);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transform: translateY(0%)
+  transform: translateY(0%);
 }
 
 .our-portfolio-list:hover {
@@ -410,7 +402,7 @@ nav ul li {
 
 .portfolio-images-text {
   position: absolute;
-  top:0;
+  top: 0;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -420,11 +412,12 @@ nav ul li {
   height: 100%;
   width: 100%;
   transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4,0,0.2,1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-images:hover .portfolio-images-text {
-  transform: translateY(0); }
+  transform: translateY(0);
+}
 
 /* Footer */
 .footer {
@@ -513,7 +506,5 @@ nav ul li {
 }
 
 .footer-socialmedia-icon {
-  width: 24px;
-  height: 24px;
   fill: #f4f4fd;
 }
