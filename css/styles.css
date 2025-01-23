@@ -145,7 +145,7 @@ nav ul li {
   display: inline-block; /* Yan yana durması için */
 }
 
-.address-menu a {
+.address-mail-tel {
   text-decoration: none; /* Alt çizgiyi kaldır */
   color: #434455; /* Varsayılan renk */
   font-size: 16px;
@@ -155,7 +155,7 @@ nav ul li {
   transition: color cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.address-menu a:hover {
+.address-mail-tel:hover {
   color: #404bbf; /* Hover rengi */
 }
 
