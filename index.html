@@ -612,8 +612,92 @@
             </li>
           </ul>
         </div>
+        <div class="subscribe">
+          <p>Subscribe</p>
+          <div class="mail-button">
+            <input type="email" class="footer-mail" placeholder="E-mail" />
+            <button type="submit" class="footer-button">
+              Subscribe
+              <svg class="icon-send">
+                <use href="./images/icons.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
     </footer>
     <!--Footer Bitti-->
+
+    <!--MODAL FORM-->
+    <div class="modal">
+      <div class="color-layer"></div>
+      <form name="form-area">
+        <div class="modal-form">
+          <div class="close">
+            <span>x</span>
+          </div>
+          <h3 class="modal-title">
+            Leave your contacts and we will call you back
+          </h3>
+          <div class="input-group">
+            <label for="username">Name</label>
+            <div class="input-container">
+              <svg class="icon">
+                <use href="./images/icons.svg#icon-Person"></use>
+              </svg>
+              <input
+                type="text"
+                name="username"
+                class="username"
+                id="username"
+              />
+            </div>
+          </div>
+          <div class="input-group">
+            <label for="phone">Phone</label>
+            <div class="input-container">
+              <svg class="icon">
+                <use href="./images/icons.svg#icon-Phone"></use>
+              </svg>
+              <input type="text" name="phone" class="phone" id="phone" />
+            </div>
+          </div>
+          <div class="input-group">
+            <label for="mail">Mail</label>
+            <div class="input-container">
+              <svg class="icon">
+                <use href="./images/icons.svg#icon-Mail"></use>
+              </svg>
+              <input type="text" name="mail" class="mail" id="mail" />
+            </div>
+          </div>
+          <div class="input-group">
+            <label for="comment">Comment</label>
+            <textarea
+              name="comment"
+              id="comment"
+              class="comment"
+              placeholder="Text Input"
+            ></textarea>
+          </div>
+        </div>
+
+        <div class="input-group">
+          <div class="consent-container">
+            <input
+              type="checkbox"
+              name="checkbox"
+              id="consent"
+              class="consent-checkbox"
+            />
+            <label for="consent" class="consent-label">
+              I accept the terms and conditions of the
+              <a href="#" class="privacy-link">Privacy Policy</a>
+            </label>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!--MODAL FORM BİTTİ-->
   </body>
 </html>
